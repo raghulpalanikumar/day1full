@@ -1,0 +1,32 @@
+/* Navbar Container */
+nav {
+  display: flex;
+
+  align-items: end;
+  background-color: #303071; /* Dark professional background */
+  padding: 15px 30px;
+  gap: 40px;
+  border-radius: 10px;
+  border: 2px solid #120d72; /* Indigo border */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  margin-top: 0%;
+  max-width: 10000px;
+}
+
+/* Navigation Links */
+.Link {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 18px;
+  padding: 10px 20px;
+  border-radius: 6px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Hover Effect */
+.Link:hover {
+  background-color: #4f46e5; /* Indigo background */
+  color: #ffffff;
+  box-shadow: 0 2px 8px rgba(79, 70, 229, 0.4);
+}
