@@ -1,4 +1,5 @@
 import React from 'react'
+
 import {Link} from 'react-router-dom'
 
 const Hooks = () => {
@@ -7,6 +8,8 @@ const Hooks = () => {
         <Link to="/state">useState</Link>
          <Link to="/effect">useEffect</Link>
          <Link to="/effect2">useEffect2</Link>
+         <Link to="/ref">useRef</Link>
+         <Link to="/reducer">useReducer</Link>
     </div>
   )
 }

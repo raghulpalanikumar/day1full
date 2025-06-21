@@ -11,6 +11,11 @@ import State from './assets/Hooks/State';
 import Effect from './assets/Hooks/Effect';
 import Effect2 from './assets/Hooks/Effect2';
 import Login from './componenets/Login';
+import Ref from './assets/Hooks/Ref';
+import Reducer from './assets/Hooks/Reducer';
+
+
+
 
 
 const App = () => {
@@ -22,15 +27,16 @@ const App = () => {
     <Routes>
     <Route path='/about' element={<About/>}></Route>
     <Route path='/contact' element={<Contact/>}></Route>
-    <Route path='/Home' element={<Home/>}></Route>
+    <Route path='/home' element={<Home userName="Raghul" />} />
       <Route path='/counter' element={<Counter/>}></Route>
       <Route path='/hooks' element={<Hooks/>}> </Route>
       <Route path='/state' element={<State/>}></Route>
       <Route path='/effect' element={<Effect/>}></Route>
-      <Route path='/effect2'element={<Effect2/>}></Route>
+      <Route path='/effect2'element={<Effect2/>}></Route>s
       <Route path='/login'element={<Login/>}></Route>
-
-
+      <Route path='/ref'element={<Ref/>}></Route>
+      <Route path='/reducer'element={<Reducer/>}></Route>
+    
     </Routes>
   </div>
    )
