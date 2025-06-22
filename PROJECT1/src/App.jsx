@@ -1,18 +1,14 @@
-import React from 'react';
-import Home from './componenets/Home'
-import About from './componenets/About'
-import Contact from './componenets/Contact';
-import Navbar from './componenets/navbar';
-import { Routes,Route } from 'react-router-dom';
-import './index.css';
-import Counter from './componenets/Counter';
-import Hooks from './componenets/Hooks';
-import State from './assets/Hooks/State';
-import Effect from './assets/Hooks/Effect';
-import Effect2 from './assets/Hooks/Effect2';
-import Login from './componenets/Login';
-import Ref from './assets/Hooks/Ref';
-import Reducer from './assets/Hooks/Reducer';
+import Home from './components/Home'
+import About from './components/About'
+import Contact from './components/Contact';
+import Navbar from './components/navbar';
+import Counter from './components/Counter';
+import Hooks from './components/Hooks';
+import Login from './components/Login';
+import State from './components/State';
+import Effect from './components/Effect';
+import Effect2 from './components/Effect2';
+import { Routes, Route } from 'react-router-dom';
 
 
 
