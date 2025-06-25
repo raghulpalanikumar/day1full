@@ -28,8 +28,8 @@ const Todo = () => {
 
     }
     setEditing(null)
-    setTask('')
-    fetchTodo()
+    setTask('')//after submit the form
+    fetchTodo()//add panale katanum
   }
   const handleToggleStatus = async (todo) =>{
     await axios.put(`http://localhost:3000/todo/update${todo._id}`,{
@@ -61,7 +61,8 @@ const Todo = () => {
       <ul>
         {todos.map((todo) => (
           <li key={todo._id}>
-            <span onClick={()=>{handleToggleStatus(todo)}} style={{cursor:"pointer",textDecoration: todo.status ? 'line-through' : 'none'}}>
+            <span onClick={()=>{handleToggleStatus(todo)}} style={{cursor:"pointer",textDecoration: todo.status ? 'line-through' : 'none'}}> 
+  
             
               <p>{todo.task}</p>
               </span>
