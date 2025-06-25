@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
+const API='https://express-zlfe.onrender.com'
 
 const Todo = () => {
   const [todos, setTodo] = useState([]); // array of tasks from backend
@@ -7,7 +8,7 @@ const Todo = () => {
   const [editing, setEditing] = useState(null); // editing object
 
   const fetchTodo = async () => {
-    const response = await axios.get('http://localhost:3000/todo/');
+    const response = await axios.get(`${API}/todo/`);
     console.log(response.data);
     setTodo(response.data);
   };
@@ -20,11 +21,11 @@ const Todo = () => {
     e.preventDefault();
     if(editing)
     {
-      await axios.put(`http://localhost:3000/todo/update${editing._id}`,{task})
+      await axios.put(`${API}/todo/update${editing._id}`,{task})
     }
     else
     {
-      await axios.post('http://localhost:3000/todo/post', {task})
+      await axios.post(`${API}/todo/post`, {task})
 
     }
     setEditing(null)
@@ -32,7 +33,7 @@ const Todo = () => {
     fetchTodo()//add panale katanum
   }
   const handleToggleStatus = async (todo) =>{
-    await axios.put(`http://localhost:3000/todo/update${todo._id}`,{
+    await axios.put(`${API}/todo/update${todo._id}`,{
       status: !todo.status
     })
     fetchTodo()
@@ -43,7 +44,7 @@ const Todo = () => {
     console.log(todo, 'todo')
   }
   const handleDelete = async (id) => {
-    await axios.delete(`http://localhost:3000/todo/${id}`)//yosi da router ku po
+    await axios.delete(`${API}/todo/${id}`)//yosi da router ku po
     fetchTodo()
   };
 
