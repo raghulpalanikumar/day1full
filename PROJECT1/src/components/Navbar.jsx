@@ -11,6 +11,7 @@ function Navbar() {
       <Link to="/counter" className="Link">Counter</Link>
        <Link to="/hooks" className="Link">Hooks</Link>
        <Link to="/login" className="Link">LOGIN</Link>
+       <Link to="/todo" className="Link">Todo</Link>
     </nav>
   );
 }
